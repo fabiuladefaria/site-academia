@@ -67,9 +67,10 @@ body {
     /*esse 0.8 é a transparemcia*/
     width: 100%;
     z-index: 100rem;
-    padding: .0rem;
-    /*espaçamento interno margens de dentro*/
     display: flex;
+
+     justify-content: center; /*centralizar o menu*/
+
     /*para deixar os links na horizontal*/
     justify-content: baseline;
     /*centraliza os links*/
