@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(5, 32, 66);
+    color: white;
+    line-height: 1.6;
+}
+.home{ /*estilização da seção home*/
+    display: flex; /*para deixar a imagem e o texto na horizontal*/
+    flex-direction: column; /*deixa a imagem e o texto na vertical*/
+    align-items: center; /*centraliza a imagem e o texto*/
+    text-align: center; /*centraliza o texto*/
+    padding: 2rem; /*espaçamento interno margens de dentro*/
+
+}
+.home_h2{
+    text-align: center;
+    margin-top: 5rem;
+    
+
+    
+}
+
+.menu{
+    position: fixed;
+    /*para fixar o menu quando mexer*/
+    background-color: rgba(4, 84, 235, 0.596); /*esse 0.8 é a transparemcia*/
+    width: 100%;
+    z-index: 100;
+    padding: 1.0rem; /*espaçamento interno margens de dentro*/
+    display: flex; /*para deixar os links na horizontal*/
+    justify-content: center; /*centraliza os links*/
+}
+.menu a {
+    color: white;
+    text-decoration: none; /*tira o sublinhado dos links*/
+    margin: 0 1rem; /*espaçamento entre os links*/
+    font-weight: bold; /*deixa o texto em negrito*/
+}
+
+.foto_empresa{
+    width: 250px; /*tamanho da imagem*/
+    height: 250px; /*tamanho da imagem*/
+    margin-top: 10%;
+    border-radius: 50%; /*deixa a imagem redonda*/
+    margin-right: 20px; /*espaçamento entre a imagem e o texto*/
+
+    
+}
+.home_caixa{
+    display: grid;
+    grid-template-columns: 250px 1fr; /*duas colunas, a primeira com tamanho fixo e a segunda com tamanho automático*/
+    align-items: center;    /* Alinha verticalmente no centro */
+  gap: 30px; /* Espaçamento entre a imagem e o texto */
+    margin-top: 2rem; /*espaçamento entre a imagem e o texto*/
+    max-width: 800px; /*tamanho máximo da seção*/
+    margin-bottom: 4rem; /*espaçamento entre a imagem e o texto*/
+  
+   
+}
+
+.paragrafo_home{
+    text-align: justify; /*alinha o texto dos dois lados*/
+    font-size: 1rem; /*tamanho da fonte*/
+    max-width: 500px; /*tamanho máximo do parágrafo*/
+    line-height: 1.5; /*espaçamento entre as linhas*/
+}
+
+#sobre {
+    scroll-margin-top: 100px; /* ajuste para a altura do seu menu */
+}
+
+
+.sobre{
+    background-color: rgba(5, 14, 31, 0.596); /*esse 0.8 é a transparemcia*/
+    padding: 2rem; /*espaçamento interno margens de dentro*/
+    margin-top: 2rem; /*espaçamento externo margens de fora*/
+    text-align: center; /*centraliza o texto*/
+    border-radius: 10px; /*deixa as bordas arredondadas*/
+    max-width: 800px; /*tamanho máximo da seção*/
+    margin-left: auto; /*centraliza a seção*/
+    margin-right: auto; /*centraliza a seção*/
+}
+
+.pilares_caixa{
+
+    display: grid; /*para deixar os projetos na horizontal*/
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /*para deixar os projetos na horizontal e responsivo*/
+    /*grid-temple... foi para criar colunas, se repetem e ele pois para encaixar na tela (autto-fit) e qual o tamanho delas? ai pois no minimo 300px e max a tela toda 1fra*/
+    grid-area: 20px; /*espaçamento entre os projetos*/
+    max-width: 800px; /*tamanho máximo da seção*/
+    margin: 0 auto; /*centraliza a seção*/
+    gap: 2rem; /*espaçamento entre os projetos*/
+    margin-top: 3%; /*espaçamento acima da seção*/
+  
+}
+
+.pilares_paragrafo{
+    padding: 0 1rem; /*espaçamento interno margens de dentro*/
+    font-size: 1rem; /*tamanho da fonte do parágrafo*/
+    margin: 1rem 0; /*espaçamento acima e abaixo do parágrafo*/
+    text-align: center; /*centralizar o parágrafo*/
+    color: rgb(226,232,240,0.8);
+    
+
+}
+
+
+.titulo_pilares{
+    text-align: center; /*centralizar o titulo*/;
+    font-size: 1.5rem; /*tamanho da fonte do h1*/
+    margin-top: 1rem; /*espaçamento acima do h3*/
+    color: rgb(226,232,240,0.8);
+}
+
+.pilar_item{
+    background-color:rgba(5, 14, 31, 0.596); /*esse 0.8 é a transparemcia*/
+    border-radius: 20px; /*deixa as bordas arredondadas*/
+    padding: 1rem; /*espaçamento interno margens de dentro*/
+}
+
+.planostitulo{
+    text-align: center; /*centralizar o titulo*/;
+    font-size: 1.5rem; /*tamanho da fonte do h1*/
+    margin-top: 1rem; /*espaçamento acima do h3*/
+    color: rgb(226,232,240,0.8);
+}
+
+.planos_caixa{
+    display: grid; /*para deixar os projetos na horizontal*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*para deixar os projetos na horizontal e responsivo*/
+    /*grid-temple... foi para criar colunas, se repetem e ele pois para encaixar na tela (autto-fit) e qual o tamanho delas? ai pois no minimo 300px e max a tela toda 1fra*/
+    grid-area: 20px; /*espaçamento entre os projetos*/
+    max-width: 800px; /*tamanho máximo da seção*/
+    margin: 0 auto; /*centraliza a seção*/
+    gap: 2rem; /*espaçamento entre os projetos*/
+    margin-top: 3%; /*espaçamento acima da seção*/
+  
+}
+
+.planos_card{
+    background-color:rgba(5, 14, 31, 0.596); /*esse 0.8 é a transparemcia*/
+    border-radius: 20px; /*deixa as bordas arredondadas*/
+    padding: 2rem; /*espaçamento interno margens de dentro*/
+    text-align: center; /*centraliza o texto*/
+}
+
+
+.botao_projeto{
+    display: inline-block; /*para deixar o botão na horizontal*/
+    background-color: #0439aa; /*cor de fundo do botão*/
+    color: white; /*cor do texto do botão*/
+    padding: 0.5rem 1rem; /*espaçamento interno margens de dentro*/
+    text-decoration: none; /*tira o sublinhado do botão*/
+    border-radius: 5px; /*deixa as bordas arredondadas*/
+    margin-top: 1rem; /*espaçamento acima do botão*/
+    font-weight: bold; /*deixa o texto em negrito*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gtranslate_wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background-color: #14c270;
+
+  }
+
+  .whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
+}
+
+.whatsapp:hover {
+  background-color: #39d325;
+}
