@@ -140,28 +140,25 @@
     <section class="contatos" id="contato">
       <h2 class="contato_titulo">Entre em contato</h2>
 
-      <form action="https://api.staticforms.xyz/submit" method="post" class="formulario_contato">
-        <!-- Chave do StaticForms -->
-        <input type="hidden" name="accessKey" value="sf_2235ijkefc323a4b565lk31m">
+     <form id="formContato" action="https://api.staticforms.xyz/submit" method="post" class="form">
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Seu nome" required>
 
-        <!-- Página para onde o usuário será redirecionado depois de enviar -->
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Seu email" required>
+
+        <label>Mensagem</label>
+        <textarea name="message" placeholder="Sua mensagem aqui" required></textarea>
+
+        <input type="hidden" name="apiKey" value="sf_2235ijkefc323a4b565lk31m">
         <input type="hidden" name="redirectTo" value="obg.html">
 
-
-        <div class="grupo_form">
-          <input type="text" name="name" placeholder="Nome" required class="campo_form">
+        <div class="form-buttons">
+            <button type="reset" class="btn-outline">Cancelar</button>
+            <button type="submit" class="btn-solid">Enviar</button>
         </div>
-
-        <div class="grupo_form">
-          <input type="email" name="email" placeholder="Email" required class="campo_form">
-        </div>
-
-        <div class="grupo_form">
-          <textarea name="message" placeholder="Mensagem" required class="campo_form"></textarea>
-        </div>
-
-        <button type="submit" class="botao_form">Enviar</button>
-      </form>
+    </form>
+</section>
     </section>
 
 
@@ -204,7 +201,7 @@
     <div class="container">
 
 
-
+<script src="script.js"></script>
 
 </body>
 

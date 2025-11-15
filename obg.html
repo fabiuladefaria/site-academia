@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: white;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .main{
+            background-color: rgb(5, 32, 66);
+         
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.13);
+            padding: 50px 50px;
+            border-radius: 22px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: fadeUp 1s ease;
+            max-width: 480px;
+        }
+
+       
+
+        .checkmark {
+            font-size: 65px;
+            margin-bottom: 10px;
+            animation: pop 0.6s ease;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0); }
+            70% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #5a3ea6;
+            padding: 12px 26px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #e6dbff;
+            transform: translateY(-2px);
+        }
+
+        .social {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .social a {
+            font-size: 26px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            color: #d8c8ff;
+            transform: scale(1.15);
+        }
+
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+
+
+
+        <div class="checkmark">✔️</div>
+
+        <h1>Obrigada!</h1>
+        <p>Sua mensagem foi enviada com sucesso.<br>  
+        Em breve retornarei o contato! </p>
+
+        <a href="index.html" class="btn">Voltar para o site</a>
+
+        <div class="social">
+            <a href="https://github.com/fabiuladefaria" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fabiuladefaria/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fabiuladefaria/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </div>
+    </div>
+
+
+</body>
+</html>
